@@ -1,0 +1,41 @@
+@media (max-width: 1199px) {
+    #home-slider .item img{ max-height: 500px; }
+    .about-image{ width: 460px; height: 460px; }
+    .home-about h3{ font-size: 30px; line-height: 34px; }
+    .home-vision-mission:before{ width: 100%; }
+    .vm-content { padding: 90px 30px 30px; }
+    .vm-image { margin-top: 0; padding: 0 30px; }
+    .hiw-item{ margin-bottom: 24px; }    
+    .navbar-expand-lg{ justify-content: end; }
+}
+@media (max-width: 991px) {
+    #home-slider .item img { max-height: 400px; }
+    #home-slider .slide-content{ text-align: center; }
+    .slide-content .slide-head{ font-size: 36px; }
+    .about-image { width: 100%; height: auto; margin-top: 20px; float: none; border-radius: 0; }
+    .section-sapce { padding: 50px 0; }
+    .service-item h3 { font-size: 20px; }
+    .sec-heading { font-size: 36px; }
+}
+
+@media (max-width: 767px){
+    .slide-content .slide-head { font-size: 30px; line-height: 34px; }
+    .slide-content p{ font-size: 16px; }
+    .footer-item{ margin-bottom: 30px; }
+    .footer-item .address p br{ display: none; }
+}
+@media (max-width: 599px){
+    .toplink ul{padding: 0;flex-wrap: wrap;}
+    .toplink ul li{margin-left: 0;justify-content: center;width: 100%;}
+    .slide-content .sub-head, .slide-content .bottom-head{font-size: 18px;}
+    .slide-content .slide-head { font-size: 24px; line-height: 28px; }
+    .slide-content p { font-size: 14px; }
+    .home-about h3 { font-size: 24px; line-height: 28px; }
+    .exp-year{padding: 15px 10px 10px 12px;width: 100%;}
+    .sec-heading { font-size: 30px; line-height: 34px; }
+    .vm-item h3{font-size: 22px;}
+    .vm-item p { font-size: 16px; }
+    .vm-image { padding: 0; }
+    .copyright p{font-size: 14px;}
+    .wcu-img-wrapper::before{right: 0;}
+}
