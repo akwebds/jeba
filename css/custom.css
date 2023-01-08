@@ -39,6 +39,8 @@ a{
     transform: translateX(-5px);
 }
 
+iframe{max-width: 100%;}
+
 /* main slider */
 #home-slider{
     position: relative;
@@ -712,5 +714,7 @@ textarea.form-control{
 .service-info .default-content ul li{
     width: 50%;
     display: inline-flex;
-    font-size: 18px;
+    font-size: 20px;
+    line-height:  24px;
+    padding-right: 10px;
 }

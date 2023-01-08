@@ -16,6 +16,13 @@
     .section-sapce { padding: 50px 0; }
     .service-item h3 { font-size: 20px; }
     .sec-heading { font-size: 36px; }
+    .service-info .default-content ul li{justify-content: center;width: 100%;padding: 0;font-size: 18px;}
+    .service-info .default-content ul li:before{position: relative;margin-right: 15px;}
+    .service-info .default-content p{font-size: 18px;}
+
+    .about-content { padding-right: 0; }
+
+    iframe { width: 100%; }
 }
 
 @media (max-width: 767px){
@@ -23,6 +30,15 @@
     .slide-content p{ font-size: 16px; }
     .footer-item{ margin-bottom: 30px; }
     .footer-item .address p br{ display: none; }
+
+    .inner-banner img{height: auto;}
+    .service-info .default-content ul li{font-size: 16px; justify-content: left; padding-left: 30px;}
+    .service-info .default-content ul li:before{position: absolute;margin-right: 0;}
+    .service-info .default-content p{font-size: 16px;}
+
+    .contact-page .col-md-6:first-of-type{order: 2;}
+    .contact-page .col-md-6:last-of-type{order: 1;}
+    .contact-page iframe {height: 300px;}
 }
 @media (max-width: 599px){
     .toplink ul{padding: 0;flex-wrap: wrap;}
@@ -38,4 +54,11 @@
     .vm-image { padding: 0; }
     .copyright p{font-size: 14px;}
     .wcu-img-wrapper::before{right: 0;}
+
+    .about-page-img .exp-year{width: auto;}
+    .exp-year h6 { font-size: var(--h5Size);}
+    .exp-year small { font-size: 16px;}
+
+    
+    .contact-page iframe {height: 250px;}
 }
