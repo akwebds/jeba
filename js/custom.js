@@ -6,6 +6,7 @@ $(document).ready(function(){
       nav: true, // Show next and prev buttons
       navText: ["arrow_back_ios", "arrow_forward_ios"],
       autoplay: true,
+      autoplayHoverPause: true,
       loop: true,
       items: 1,
       itemsDesktop: false,
