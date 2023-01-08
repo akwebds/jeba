@@ -7,6 +7,8 @@
     .vm-image { margin-top: 0; padding: 0 30px; }
     .hiw-item{ margin-bottom: 24px; }    
     .navbar-expand-lg{ justify-content: end; }
+
+    .wcu-item{min-height: auto;}
 }
 @media (max-width: 991px) {
     #home-slider .item img { max-height: 400px; }
