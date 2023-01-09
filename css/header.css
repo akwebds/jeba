@@ -178,5 +178,5 @@
     .main-header.sticky .main-nav .navbar .navbar-collapse { top: 63px; box-shadow: 0 7px 5px 0 rgb(0 0 0 / 13%); }
 }
 @media (max-width: 599px){
-    .main-nav .navbar .navbar-collapse{ top: 152px; }
+    .main-nav .navbar .navbar-collapse{ top: 144px; }
 }
