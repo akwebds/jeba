@@ -551,7 +551,7 @@ iframe{max-width: 100%;}
 }
 .slide-content .bottom-head span {
     font-weight: 700;
-    color: #213b81;
+    color: var(--themeColor);/*#213b81;*/
 }
 .about-content{
     padding-right: 50px;
