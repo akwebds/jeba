@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto:wght@300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap');
+@import url("https://use.typekit.net/biq4alt.css");
 @import url('header.css');
 @import url('footer.css');
 
 :root{
-    --font: 'Roboto',sans-serif;
-    --font2: 'Libre Baskerville', serif;;
+    --font: 'Dosis', serif;
+    --font2: filicudi-solid, sans-serif;
     --baseTextSize: 16px;
     --h1Size: 42px;
     --h2Size: 36px;
@@ -21,6 +21,7 @@
 body{
     font-family: var(--font);
     font-size: var(--baseTextSize);
+    font-weight: 500;
     padding: 0;
     margin: 0;
 }
@@ -53,8 +54,8 @@ iframe{max-width: 100%;}
     content: '';
     width: 100%;
     height: 100%;
-    background-color: transparent;
-    background-image: radial-gradient(at top center, #15495757 0%, #154957 100%);
+    background-color: rgb(0 0 0 / 85%);
+    /* background-image: radial-gradient(at top center, #15495757 0%, #154957 100%); */
     position: absolute;
     top: 0;
     left: 0;
@@ -63,7 +64,8 @@ iframe{max-width: 100%;}
     display: block;
     width: 100%;
     object-fit: cover;
-    max-height: 750px;
+    height: 100vh;
+    /* max-height: 750px; */
 }
 #home-slider .owl-nav button{
     position: absolute;
@@ -117,8 +119,8 @@ iframe{max-width: 100%;}
     animation-delay: 0.3s;
 }
 .slide-content .bottom-head {
-    font-size: var(--h5Size);
-    text-transform: uppercase;
+    font-size: var(--h4Size);
+    /* text-transform: uppercase; */
     color: var(--bs-body-bg);       
 }
 .owl-item.active .bottom-head {
@@ -131,7 +133,8 @@ iframe{max-width: 100%;}
 }
 .slide-content p {
     font-size: var(--h5Size);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
     color: var(--bs-body-bg);    
 }
 .owl-item.active p {
@@ -143,13 +146,12 @@ iframe{max-width: 100%;}
     animation-delay: 0.3s;
 }
 .slide-content .different-font {
-    font-size: var(--h5Size);
+    font-size: 22px;
     color: #213b81;
-    background: rgb(255 255 255 / 68%);
+    /* background: rgb(255 255 255 / 68%); */
     display: inline-block;
     padding: 5px 10px;
     font-family: var(--font2);
-    font-style: italic;
     border-radius: 5px;
 }
 .owl-item.active .different-font {
@@ -200,7 +202,7 @@ iframe{max-width: 100%;}
 /* home about */
 .home-about h3{
     font-size: var(--h2Size);
-    font-weight: 500;
+    font-weight: 700;
     color: var(--headingColor);
     line-height: 46px;
     margin-bottom: 20px;
@@ -382,6 +384,7 @@ iframe{max-width: 100%;}
 }
 .service-item h3{
     font-size: var(--h4Size);
+    font-weight: 700;
 }
 /* mission vision */
 .home-vision-mission{
@@ -410,8 +413,8 @@ iframe{max-width: 100%;}
 .vm-item h3{
     color: var(--bs-body-bg);
     font-size: var(--h3Size);
+    font-weight: 700;
     margin-bottom: 15px;
-    font-weight: 500;
 }
 .vm-item p{
     font-size: 18px;
@@ -430,6 +433,7 @@ iframe{max-width: 100%;}
     background: #f3f3f3;
     text-align: center;
     transition: all 0.3s ease;
+    height: 100%;
 }
 .hiw-item .icon-wrapper{
     width: 70px;
@@ -449,9 +453,11 @@ iframe{max-width: 100%;}
 .hiw-item .sec-type{
     display: inline-block;
     font-size: 14px;
+    font-weight: 700;
 }
 .hiw-item h3{
     font-size: var(--h5Size);
+    font-weight: 700;
 }
 .hiw-item:hover{
     box-shadow: 0 10px 10px #7ea1ff33;
@@ -527,8 +533,8 @@ iframe{max-width: 100%;}
     content: '';
     width: 100%;
     height: 100%;
-    background-color: transparent;
-    background-image: radial-gradient(at top center, #15495757 0%, #154957 100%);
+    background-color: rgb(0 0 0 / 85%);
+    /* background-image: radial-gradient(at top center, #15495757 0%, #154957 100%); */
     position: absolute;
     top: 0;
     left: 0;
@@ -541,6 +547,11 @@ iframe{max-width: 100%;}
     height: 100%;
     display: flex;
     align-items: center;
+    padding-top: 147px;
+}
+.slide-content .bottom-head span {
+    font-weight: 700;
+    color: #213b81;
 }
 .about-content{
     padding-right: 50px;
