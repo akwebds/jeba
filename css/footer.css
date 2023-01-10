@@ -93,8 +93,18 @@
     transition: all .2s ease-in-out;
 }
 
+.certificate{
+    margin-top: 30px;
+}
+.certificate img{
+    max-width: 150px;
+}
+
 @media (max-width: 1199px) {
-    .footer-logo { text-align: center; margin-bottom: 30px; }
+    .footer-logo { text-align: center;}
+
+    .footer-item.img-item { display: flex; align-items: center; justify-content: center; margin-bottom: 30px; flex-wrap: wrap; }
+    .certificate { margin-left: 30px; margin-top: 0;}
 }
 
 @media (max-width: 767px) {
@@ -105,4 +115,6 @@
 
 @media (max-width: 599px){
     .copyright p{font-size: 14px;}
+
+    .certificate { margin-left: 0; margin-top: 30px;}
 }

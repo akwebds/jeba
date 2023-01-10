@@ -1,3 +1,9 @@
+@media (max-width: 1399px) {
+    .about-image{ width: 550px; height: 550px; }
+    .vm-content { padding: 40px 30px 40px; }
+    .vm-item p { font-size: 16px; }
+    .hiw-item{padding: 30px;}
+}
 @media (max-width: 1199px) {
     .about-image{ width: 460px; height: 460px; }
     .home-about h3{ font-size: 30px; line-height: 34px; }
@@ -52,6 +58,8 @@
     .contact-page iframe {height: 300px;}
 
     .list-boxes p{ width: 100%}
+
+    .inner-banner .slide-content .slide-head{margin: 0;}
 }
 @media (max-width: 599px){
     .toplink ul{padding: 0;flex-wrap: wrap;}
@@ -73,6 +81,5 @@
     .exp-year h6 { font-size: var(--h5Size);}
     .exp-year small { font-size: 16px;}
 
-    
     .contact-page iframe {height: 250px;}
 }

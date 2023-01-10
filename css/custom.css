@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;700&display=swap');
 @import url("https://use.typekit.net/biq4alt.css");
 @import url('header.css');
 @import url('footer.css');
 
 :root{
-    --font: 'Dosis', serif;
+    --font: 'Noto Sans Georgian', serif;
     --font2: filicudi-solid, sans-serif;
     --baseTextSize: 16px;
     --h1Size: 42px;
@@ -385,6 +385,7 @@ iframe{max-width: 100%;}
 .service-item h3{
     font-size: var(--h4Size);
     font-weight: 700;
+    text-transform: capitalize;
 }
 /* mission vision */
 .home-vision-mission{
@@ -422,9 +423,12 @@ iframe{max-width: 100%;}
 .vm-image{
     margin-top: -60px;
     position: relative;
+    height: 100%;
 }
 .vm-image img{
     max-width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* home how it work */
@@ -488,14 +492,13 @@ iframe{max-width: 100%;}
 }
 .wcu-item .icon img{
     max-width: 60%;
-    filter: hue-rotate(90deg);
 }
 .wcu-item .content{
     width: calc(100% - 85px);
 }
 .wcu-item .content h4{
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
 }
 .wcu-item .content p {
     font-size: 15px;
@@ -560,6 +563,9 @@ iframe{max-width: 100%;}
 .about-content{
     padding-right: 50px;
 }
+.about-content p{
+    text-align: justify;
+}
 .about-page-img {
     width: 100%;
     height: auto;
@@ -590,6 +596,7 @@ iframe{max-width: 100%;}
     background-attachment: fixed;
     background-position: center center;
     z-index: 1;
+    overflow: hidden;
 }
 .callback:before {
     content: '';
@@ -606,6 +613,15 @@ iframe{max-width: 100%;}
     color: var(--bs-body-bg);
     font-size: var(--h2Size);
     margin-bottom: 40px;
+}
+#myVideo {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: -2;
+    object-fit: cover;
 }
 .form-control{
     height: 50px;
