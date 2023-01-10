@@ -597,6 +597,7 @@ iframe{max-width: 100%;}
     background-position: center center;
     z-index: 1;
     overflow: hidden;
+    height: 600px;
 }
 .callback:before {
     content: '';
@@ -607,21 +608,27 @@ iframe{max-width: 100%;}
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    /* z-index: -1; */
 }
 .callback h3{
     color: var(--bs-body-bg);
     font-size: var(--h2Size);
     margin-bottom: 40px;
 }
-#myVideo {
-    position: absolute;
+.callback #myVideo {
+    /* position: absolute; */
     width: 100vw;
-    top: 0;
-    right: 0;
+    /* top: 0;
+    right: 0; */
     height: 100%;
     z-index: -2;
     object-fit: cover;
+}
+.callback .cta-content{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
 }
 .form-control{
     height: 50px;
