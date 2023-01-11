@@ -3,6 +3,7 @@
     .vm-content { padding: 40px 30px 40px; }
     .vm-item p { font-size: 16px; }
     .hiw-item{padding: 30px;}
+    .serv-item figcaption { font-size: 18px; line-height: 26px;}
 }
 @media (max-width: 1199px) {
     .about-image{ width: 460px; height: 460px; }
