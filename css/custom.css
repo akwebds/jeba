@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Noto+Sans+Georgian:wght@400;500;700&display=swap');
-@import url('flaticon.css');
+@import url('fonticon.css');
 @import url('header.css');
 @import url('footer.css');
 
@@ -16,6 +16,8 @@
     --headingColor: #191919;
     --textColor: #4c4e54;
     --themeColor: #7ea1ff;
+    --icon-size: 16px;
+    --icon-padding: 0.7em;
 }
 
 body{
@@ -44,8 +46,10 @@ a{
 iframe{max-width: 100%;}
 
 /* main slider */
-#home-slider{
+.main-slider{
     position: relative;
+    height: 100vh;
+    background-color: rgb(0 0 0 / 85%);
 }
 #home-slider .item{
     position: relative;
@@ -147,7 +151,7 @@ iframe{max-width: 100%;}
 }
 .slide-content .different-font {
     font-size: 22px;
-    color: #213b81;
+    color: #a9a6a6;
     /* background: rgb(255 255 255 / 68%); */
     display: inline-block;
     padding: 5px 10px;

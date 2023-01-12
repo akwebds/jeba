@@ -20,7 +20,7 @@
 }
 @media (max-width: 991px) {
     .inner-banner .slide-content{padding-top: 0;}
-    #home-slider .item img { max-height: 400px; }
+    .main-slider, #home-slider .item img { max-height: 400px; }
     #home-slider .slide-content{ text-align: center; }
     .slide-content .slide-head{ font-size: 36px; }
     .about-image { width: 100%; height: auto; margin-top: 20px; float: none; border-radius: 0; }

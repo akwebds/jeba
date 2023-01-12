@@ -1,4 +1,9 @@
 $(document).ready(function(){
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    .forEach(tooltip => {
+      new bootstrap.Tooltip(tooltip)
+    })
+    
     new WOW().init();
 
     $("#home-slider").owlCarousel({

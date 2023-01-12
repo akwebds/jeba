@@ -75,6 +75,33 @@
     color: var(--bs-body-bg);
 }
 
+.social-links a{
+    width: calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)));
+    height: calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)));
+    background-color: #FFFFFF;
+    font-size: 18px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #0a0f1c;
+    margin-right: 10px;
+    transition: all .3s;
+}
+.social-links a:hover{
+    animation-name: animation-pop;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    background: var(--themeColor);
+    color: var(--bs-body-bg);
+}
+@keyframes animation-pop {
+    50% {
+        transform: scale(1.2)
+    }
+}
+
 #back-top {
     font-weight: 900;
     color: var(--bs-body-bg);
