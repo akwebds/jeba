@@ -852,3 +852,58 @@ textarea.form-control{
     line-height: 34px;
     margin-top: 0;
 }
+
+.thank-you{
+    width: 100%;
+    min-height: 100vh;
+}
+.thank-you span{
+    font-size: calc(var(--h1Size) * 2);
+    color: var(--themeColor);
+    margin-bottom: 30px;
+}
+.thank-you h3{
+    font-family: var(--font2);
+    font-size: var(--h1Size);
+    font-weight: 700;
+    color: var(--themeColor);
+}
+.thank-you p{
+    margin: 30px 0;
+}
+
+
+.submitted {
+    color: #0dcaf0;
+    position: relative;
+}
+.submitted:hover, .submitted:focus{
+    color: #0dcaf0;
+    background: #0dcaf0;
+}
+
+.submitted::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 2px solid transparent;
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}

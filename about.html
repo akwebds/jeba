@@ -33,7 +33,7 @@
                                 </li>
                                 <li>
                                     <span class="material-icons-round"> email </span>
-                                    <a href="mailto:B.berlin17@gmail.com">B.berlin17@gmail.com</a>
+                                    <a href="mailto:info@joyouselite.in">info@joyouselite.in</a>
                                 </li>
                             </ul>
                         </div>
@@ -144,18 +144,18 @@
                         <h3 class="wow animated fadeInDown">You can simply request a callback from us:</h3>
                     </div>
                     <div class="col-lg-12 col-xl-7">
-                        <form class="row justify-content-center" method="post">
+                        <form method="post" class="row justify-content-center" action="">
                             <div class="row justify-content-center">
                                 <div class="col-sm-6 mb-4">
-                                    <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+                                    <input type="text" id="name" name="name" class="form-control req" placeholder="Name" aria-label="Name">
                                 </div>
                                 <div class="col-sm-6 mb-4">
-                                    <input type="text" class="form-control" placeholder="Phone Number" aria-label="Phone Number">
+                                    <input type="text" id="phoneNumber" name="phoneNumber" class="form-control onlyNum req" placeholder="Phone Number" aria-label="Phone Number">
                                 </div>
                             </div>
                             <div class="row justify-content-center">
                                 <div class="col text-center">
-                                    <button type="submit" onclick="sendMail()" class="btn btn-info">Request Callback</button>
+                                    <button type="button" class="btn btn-info submit-btn" onclick="requestCallback()">Request Callback</button>
                                 </div>
                             </div>
                         </form>
@@ -279,7 +279,7 @@
                         </div>
                         <div class="phone">
                             <span class="material-icons-round"> email </span>
-                            <a href="mailto:B.berlin17@gmail.com">B.berlin17@gmail.com</a>
+                            <a href="mailto:info@joyouselite.in">info@joyouselite.in</a>
                         </div>
                     </div>
                 </div>
@@ -311,10 +311,10 @@
                     <div class="footer-item">
                         <h4>Follow Us</h4>
                         <div class="social-links">
-                            <a target="_blank" data-bs-toggle="tooltip" data-bs-title="Linkedin" href="https://www.linkedin.com/">
+                            <a target="_blank" data-bs-toggle="tooltip" data-bs-title="Linkedin" href="https://www.linkedin.com/company/jeba-joyous-elite-business-advisory/">
                                 <span class="jeba-two-icon-linkedin"></span>
                             </a>
-                            <a target="_blank" data-bs-toggle="tooltip" data-bs-title="Instagram" href="https://www.linkedin.com/">
+                            <a target="_blank" data-bs-toggle="tooltip" data-bs-title="Instagram" href="https://www.instagram.com/">
                                 <span class="jeba-two-icon-instagram"></span>
                             </a>
                         </div>
@@ -337,20 +337,5 @@
     <script src="/js/owl.carousel.min.js"></script>
     <script src="/js/wow.min.js"></script>
     <script src="/js/custom.js"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script type="text/javascript">
-function sendEmail() {
-Email.send({
-SecureToken : "6d1b379f-9584-42f6-896b-48914f15f68d",
-To : 'ka020694@gmail.com',
-From : "kangad420@hotmail.com",
-Subject: "Testing Email using javascript",
-Body: "If you are reading this, dont forget to applaud"
-})
-.then(function (message) {
-alert("Email successfully sent")
-});
-}
-</script>
 </body>
 </html>
