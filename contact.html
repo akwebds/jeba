@@ -163,61 +163,61 @@
             </div>
             <div class="row justify-content-center">                
                 <div class="col-md-12 col-xl-8">
-                    <form action="" class="contact-form">
+                    <form method="post" action="" class="contact-form">
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group mb-4">
                                     <label for="">Company Name <sup>*</sup></label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="companyName" id="companyName" class="form-control req">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group mb-4">
                                     <label for="">First Name <sup>*</sup></label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="firstName" id="firstName" class="form-control req">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group mb-4">
                                     <label for="">Last Name <sup>*</sup></label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="lastName" id="lastName" class="form-control req">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group mb-4">
                                     <label for="">Email <sup>*</sup></label>
-                                    <input type="email" class="form-control">
+                                    <input type="email" name="email" id="email" class="form-control req email">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group mb-4">
                                     <label for="">Telephone</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="telephone" id="telephone" class="form-control onlyNum">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group mb-4">
                                     <label for="">Website</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="website" id="website" class="form-control">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group mb-4">
                                     <label for="">What do you need assistance with</label>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="assistance-with" id="accounting-services" value="YEAR AND ACCOUNTING SERVICES">
+                                        <input class="form-check-input" type="radio" name="assistanceWith" id="accounting-services" value="Year and Accounting Sservices">
                                         <label class="form-check-label" for="accounting-services">Year End Accounting Services</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="assistance-with" id="bookkeeping-services" value="BOOKKEEPING SERVICES">
+                                        <input class="form-check-input" type="radio" name="assistanceWith" id="bookkeeping-services" value="Bookkeeping Services">
                                         <label class="form-check-label" for="bookkeeping-services">Bookkeeping Services</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="assistance-with" id="gst-returns" value="GST RETURNS">
+                                        <input class="form-check-input" type="radio" name="assistanceWith" id="gst-returns" value="GST Returns">
                                         <label class="form-check-label" for="gst-returns">GST Returns</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="assistance-with" id="others" value="OTHERS">
+                                        <input class="form-check-input" type="radio" name="assistanceWith" id="others" value="Others">
                                         <label class="form-check-label" for="others">Others </label>
                                     </div>
                                 </div>
@@ -225,11 +225,11 @@
                             <div class="col-12">
                                 <div class="form-group mb-4">
                                     <label for="">Callback Details</label>
-                                    <textarea type="text" class="form-control"></textarea>
+                                    <textarea type="text" name="details" id="details" class="form-control"></textarea>
                                 </div>
                             </div>
                             <div class="col text-center">
-                                <button type="submit" class="btn btn-info">Submit</button>
+                                <button type="button" class="btn btn-info submit-btn" onclick="submitContact()">Submit</button>
                             </div>
                         </div>
                     </form>
