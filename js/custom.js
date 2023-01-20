@@ -132,10 +132,6 @@ const requestCallback = (e) => {
         email: $("#email").val(),
       },
       method: "POST",
-      dataType: "json",
-      contentType: false,
-      cache: false,
-      processData: false,
       success: function (data) {
         let _d = JSON.parse(data);
         if (_d.success) {
@@ -166,12 +162,8 @@ const submitContact = (e) => {
         message: $("#details").val(),
       },
       method: "POST",
-      dataType: "json",
-      contentType: false,
-      cache: false,
-      processData: false,
       success: function (data) {
-        let _d = data;
+        let _d = JSON.parse(data);
         if (_d.success) {
           window.location.href = window.location.origin + "/thank-you.html?cu";
         } else {

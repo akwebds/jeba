@@ -3,12 +3,14 @@
 if($_POST){ 
     $mailResponse; 
     $fname 	=  $_POST["fullName"]; 
+    $email 	=  $_POST["email"]; 
+    $phoneNumber 	=  $_POST["phoneNumber"]; 
     $qualification 	=  $_POST["qualification"]; 
     $employer   = $_POST["employer"];
     $designation   = $_POST["designation"];
     $experience        = $_POST["experience"];
     $subject 		= 'Resume Received'; 
-	$to    = "info@joyouselite.in"; 
+	$to    = "careers@joyouselite.in"; 
 	$from_email   = "info@joyouselite.in";
     $attachments = $_FILES['resumeFile'];
       
@@ -24,6 +26,14 @@ if($_POST){
 <tr>
 <td>Full Name</td>
 <td>$fname</td>
+</tr>
+<tr>
+<td>Email Address</td>
+<td>$email</td>
+</tr>
+<tr>
+<td>Phone Number</td>
+<td>$phoneNumber</td>
 </tr>
 <tr>
 <td>Qualification</td>
@@ -46,7 +56,7 @@ if($_POST){
 </html>"; 
 	   
         $headers = "MIME-Version: 1.0\r\n"; 
-        $headers .= "From: Joyous Elite Business Advisory".$from_email."\r\n"; 
+        $headers .= "From: ".$name."<".$email.">\r\n"; 
         $headers .= "Content-Type: multipart/mixed; boundary = $boundary\r\n\r\n"; 
          
         $body = "--$boundary\r\n";
@@ -90,12 +100,21 @@ if($_POST){
         
     $sentMail = mail($to, $subject, $body, $headers);
     if($sentMail)  
-    {       
+    {             
+
+		$subject2 = "Thank you for job application";
+
+        $body2 = "Thank you for applying!\nWe are always looking for fresh new idea and telent, so we're interested in learning how you may add your strengths to our growing team. We'll review your application and contact you for an interview within two weeks if your skills are a match.";
+        $headers2 = 'From: '.$to . PHP_EOL .
+            'X-Mailer: PHP/' . phpversion();
+        
+        mail($email, $subject2, $body2, $headers2);
+
         $mailResponse['success']= true;
         $mailResponse['status']=200;
         $mailResponse['message']='Thank you for applying';
         echo json_encode($mailResponse);
-		exit;
+        exit;
     }else{
         $mailResponse['success']= false;
         $mailResponse['status']=200;

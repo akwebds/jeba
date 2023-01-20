@@ -852,7 +852,9 @@ textarea.form-control{
     line-height: 34px;
     margin-top: 0;
 }
-
+.inner-banner.ty-banner:before {
+    background-color: rgb(0 0 0 / 40%);
+}
 .thank-you{
     width: 100%;
     padding: 50px 0;

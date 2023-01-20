@@ -5,7 +5,7 @@
     $fromEmail = "info@joyouselite.in";
     $to_email = "info@joyouselite.in";
 
-    if(isset($_POST['type']) == 'callback'){
+    if(isset($_POST['type'])){
         $name = ucwords($_POST['name']);
         $phoneNumber = $_POST['phoneNumber'];
         $email = $_POST['email'];
