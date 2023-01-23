@@ -2,7 +2,7 @@
 
 if($_POST){ 
     $mailResponse; 
-    $fname 	=  $_POST["fullName"]; 
+    $fname 	=  ucwords($_POST["fullName"]); 
     $email 	=  $_POST["email"]; 
     $phoneNumber 	=  $_POST["phoneNumber"]; 
     $qualification 	=  $_POST["qualification"]; 
@@ -104,9 +104,35 @@ if($_POST){
 
 		$subject2 = "Thank you for job application";
 
-        $body2 = "Thank you for applying!\nWe are always looking for fresh new idea and telent, so we're interested in learning how you may add your strengths to our growing team. We'll review your application and contact you for an interview within two weeks if your skills are a match.";
-        $headers2 = 'From: '.$to . PHP_EOL .
-            'X-Mailer: PHP/' . phpversion();
+        $message_body2 =  "<html>
+                        <body> 
+                        <table> 
+                        <tr>
+                        <td> Hi ".$fname."<br><br>
+                            Thank you for your interest in roles at Joyous Elite Business Advisory.
+                            <br><br>
+                            We have received your application and will come back to you as soon as we can to provide an update on the outcome of your application.
+                            <br><br>
+                            Please feel free to contact us at careers@joyouselite.in if you do have any questions.
+                            <br><br>
+                            Kind regards 
+                            <br><br>
+                            Careers Team 
+                            <br> 
+                            Joyous Elite Business Advisory
+                            <br>
+                            <img src='https://joyouselite.in/images/logo.png' width='300' style='margin-top: 10px;'>
+                        </td>
+                        </tr>
+                        </table>
+                        </body>
+                        </html>";
+
+        $body2 = $message_body2; 
+        
+        $headers2 = 'From: Joyous Elite Business Advisory <'.$to.'>'. "\r\n";
+        $headers2 .= 'MIME-Version: 1.0'. "\r\n";
+        $headers2 .= 'Content-Type: text/html; charset=ISO-8859-1'. "\r\n";
         
         mail($email, $subject2, $body2, $headers2);
 

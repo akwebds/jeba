@@ -63,8 +63,8 @@
 
     .inner-banner .slide-content .slide-head{margin: 0;}
 
-    .thank-you img{max-width: 80px;}
-    .thank-you h3{font-size: var(--h2Size);}
+    .thank-you h3{font-size: var(--h2Size);margin-top: 20px;}
+    .thank-you p { margin: 0 0 20px 0; font-size: 16px; line-height: normal; }
 }
 @media (max-width: 599px){
     .toplink ul{padding: 0;flex-wrap: wrap;}
