@@ -108,7 +108,7 @@ if($_POST){
                         <body> 
                         <table> 
                         <tr>
-                        <td> Hi ".$fname."<br><br>
+                        <td style='color: #000000;'> Hi ".$fname."<br><br>
                             Thank you for your interest in roles at Joyous Elite Business Advisory.
                             <br><br>
                             We have received your application and will come back to you as soon as we can to provide an update on the outcome of your application.
@@ -117,11 +117,12 @@ if($_POST){
                             <br><br>
                             Kind regards 
                             <br><br>
-                            Careers Team 
+                            Team Careers 
                             <br> 
                             Joyous Elite Business Advisory
                             <br>
                             <img src='https://joyouselite.in/images/logo.png' width='300' style='margin-top: 10px;'>
+                            <span style='opacity:0;'>Form submitted #" . date("Y-m-d h:i:sa")."</span>
                         </td>
                         </tr>
                         </table>
