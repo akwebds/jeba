@@ -10,8 +10,8 @@ if($_POST){
     $designation   = $_POST["designation"];
     $experience        = $_POST["experience"];
     $subject 		= 'Resume Received'; 
-	$to    = "careers@joyouselite.in"; 
-	$from_email   = "info@joyouselite.in";
+	$to    = "akwebds@gmail.com"; 
+	$from_email   = "akwebds@gmail.com";
     $attachments = $_FILES['resumeFile'];
       
     $file_count = count($attachments['name']);   
